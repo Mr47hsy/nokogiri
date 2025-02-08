@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 begin
-  require File.expand_path(File.join(File.dirname(__FILE__), "lib/nokogiri/version/constant"))
+  require File.expand_path(File.join(File.dirname(__FILE__), "lib/nokogiri/version"))
 rescue LoadError
   puts "WARNING: Could not load Nokogiri::VERSION"
 end
@@ -117,7 +117,6 @@ Gem::Specification.new do |spec|
     "ext/java/nokogiri/internals/ReaderNode.java",
     "ext/java/nokogiri/internals/SaveContextVisitor.java",
     "ext/java/nokogiri/internals/SchemaErrorHandler.java",
-    "ext/java/nokogiri/internals/XalanDTMManagerPatch.java",
     "ext/java/nokogiri/internals/XmlDeclHandler.java",
     "ext/java/nokogiri/internals/XmlDomParserContext.java",
     "ext/java/nokogiri/internals/XmlSaxParser.java",
@@ -148,8 +147,6 @@ Gem::Specification.new do |spec|
     "ext/java/nokogiri/internals/c14n/NodeFilter.java",
     "ext/java/nokogiri/internals/c14n/UtfHelpper.java",
     "ext/java/nokogiri/internals/c14n/XMLUtils.java",
-    "ext/java/nokogiri/internals/dom2dtm/DOM2DTM.java",
-    "ext/java/nokogiri/internals/dom2dtm/DOM2DTMdefaultNamespaceDeclarationNode.java",
     "ext/nokogiri/depend",
     "ext/nokogiri/extconf.rb",
     "ext/nokogiri/html_document.c",
@@ -201,7 +198,6 @@ Gem::Specification.new do |spec|
     "lib/nokogiri/css/tokenizer.rex",
     "lib/nokogiri/css/xpath_visitor.rb",
     "lib/nokogiri/decorators/slop.rb",
-    "lib/nokogiri/extension.rb",
     "lib/nokogiri/html.rb",
     "lib/nokogiri/html/builder.rb",
     "lib/nokogiri/html/document.rb",
@@ -212,11 +208,8 @@ Gem::Specification.new do |spec|
     "lib/nokogiri/html/sax/parser.rb",
     "lib/nokogiri/html/sax/parser_context.rb",
     "lib/nokogiri/html/sax/push_parser.rb",
-    "lib/nokogiri/jruby/dependencies.rb",
     "lib/nokogiri/syntax_error.rb",
     "lib/nokogiri/version.rb",
-    "lib/nokogiri/version/constant.rb",
-    "lib/nokogiri/version/info.rb",
     "lib/nokogiri/xml.rb",
     "lib/nokogiri/xml/attr.rb",
     "lib/nokogiri/xml/attribute_decl.rb",
@@ -229,7 +222,6 @@ Gem::Specification.new do |spec|
     "lib/nokogiri/xml/element_content.rb",
     "lib/nokogiri/xml/element_decl.rb",
     "lib/nokogiri/xml/entity_decl.rb",
-    "lib/nokogiri/xml/entity_reference.rb",
     "lib/nokogiri/xml/namespace.rb",
     "lib/nokogiri/xml/node.rb",
     "lib/nokogiri/xml/node/save_options.rb",
